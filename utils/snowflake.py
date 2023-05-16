@@ -3,13 +3,13 @@ import pandas as pd
 import streamlit as st
 
 conn = snowflake.connector.connect(
-    user=st.secrets["USER_NAME"],
-    password=st.secrets["PASSWORD"],
-    account=st.secrets["ACCOUNT"],
-    warehouse=st.secrets["WAREHOUSE"],
-    role=st.secrets["ROLE"],
-    database=st.secrets["DATABASE"],
-    schema=st.secrets["SCHEMA"],
+    USER_NAME=st.secrets["USER_NAME"],
+    PASSWORD=st.secrets["PASSWORD"],
+    ACCOUNT=st.secrets["ACCOUNT"],
+    WAREHOUSE=st.secrets["WAREHOUSE"],
+    ROLE=st.secrets["ROLE"],
+    DATABASE=st.secrets["DATABASE"],
+    SCHEMA=st.secrets["SCHEMA"],
 )
 
 
