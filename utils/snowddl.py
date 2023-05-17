@@ -14,7 +14,8 @@ class Snowddl:
     @staticmethod
     def load_ddls():
         ddl_files = {           
-            "WALMART_SALES": "sql/ddl_walmart.sql"
+            "WALMART_SALES": "sql/ddl_sales.sql",
+            "WALMART_OPERATIONS": "sql/ddl_operations.sql"
         }
 
         ddl_dict = {}
