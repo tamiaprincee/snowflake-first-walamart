@@ -65,7 +65,7 @@ def extract_code(text) -> str:
         return None
     # Use OpenAI's code-davinci-002 to extract the SQL code
     response = openai.ChatCompletion.create(
-    model='text-davinci-003',
+    model='gpt-3.5-turbo',
     messages=[
         {'role': 'user', 'content': f"Extract only the code do not add text or any apostrophes or any sql keywords \n\n{text}"},  
     ],
