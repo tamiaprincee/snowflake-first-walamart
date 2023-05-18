@@ -33,10 +33,10 @@ def get_chain(vectorstore):
     """
     Get a chain for chatting with a vector database.
     """
-    llm = OpenAI(temperature=0.08, openai_api_key=st.secrets["OPENAI_API_KEY"], model_name='code-davinci-002')
+    llm = OpenAI(temperature=0.08, openai_api_key=st.secrets["OPENAI_API_KEY"], model_name='text-davinci-003')
     
     streaming_llm = OpenAI(
-        model_name='code-davinci-002',
+        model_name='text-davinci-003',
         streaming=False, # Not working yet
         callback_manager=CallbackManager([
             StreamingStdOutCallbackHandler()
