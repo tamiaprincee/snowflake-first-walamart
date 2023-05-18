@@ -10,7 +10,7 @@ from utils.snowddl import Snowddl
 from utils.snowchat_ui import reset_chat_history, extract_code, message_func, is_sql_query
 
 openai.api_key = st.secrets["OPENAI_API_KEY"]
-MAX_INPUTS = 3
+MAX_INPUTS = 4
 chat_history = []
 
 st.set_page_config(
