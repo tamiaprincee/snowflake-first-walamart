@@ -8,7 +8,7 @@ from utils.snowflake import query_data_warehouse
 from langchain.vectorstores import FAISS
 from utils.snowddl import Snowddl
 from utils.snowchat_ui import reset_chat_history, extract_code, message_func, is_sql_query
-
+#Config
 openai.api_key = st.secrets["OPENAI_API_KEY"]
 MAX_INPUTS = 5
 chat_history = []
@@ -55,7 +55,7 @@ with open("ui/styles.md", "r") as styles_file:
 # Display the DDL for the selected table
 st.sidebar.markdown(sidebar_content)
 
-# 
+# Create a sidebar with a dropdown menu
 selected_table = st.sidebar.selectbox(
     "Select a table:", options=list(snow_ddl.ddl_dict.keys()))
 st.sidebar.markdown(f"### DDL for {selected_table} table")
