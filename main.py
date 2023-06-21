@@ -2,6 +2,7 @@
 import openai
 import streamlit as st
 from chain import get_chain
+from langchain.chat_models import ChatOpenAI
 from langchain.embeddings.openai import OpenAIEmbeddings
 from streamlit import components
 from utils.snowflake import query_data_warehouse
